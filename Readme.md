@@ -36,20 +36,22 @@ pip install -r requirements.txt
 Run backend server:
 
 uvicorn app.main:app --reload
+
 Database Setup (PostgreSQL)
 
 Create database:
-
 CREATE DATABASE access_portal;
 Environment Configuration
 
 Create or update .env file inside the Backend folder:
 
 DATABASE_URL=postgresql://postgres:yourpassword@localhost:5432/access_portal
+
 Frontend Setup
 cd Frontend
 npm install
 npm start
+
 Dashboard
 Pending Requests Count
 Approved Requests Count
@@ -62,6 +64,7 @@ node_modules is excluded from repository
 .env file is not committed for security reasons
 Database must be created manually before running backend
 Backend must be started before frontend API calls work correctly
+
 Project Structure
 AccessPortal/
 │
